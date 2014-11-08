@@ -151,9 +151,11 @@
 					"images/fucks/spiderman-17.jpg",
 					"images/fucks/spiderman-42.jpg"
 				];
-				var ry=Math.floor(Math.random()*myimages.length)
-				document.write('<a href="./index.html"><img src="'+myimages[ry]+'" border="0" href="/index.html"></a>')
-			})();
+				var ry=Math.floor(Math.random()*myimages.length);
+				var imageCount = myimages.length;
+				document.write('<a href="./index.html"><img src="'+myimages[ry]+'" border="0" href="/index.html"></a>');
+				document.write('<p>(There are currently ' +imageCount+ ' fucks that shall not be given.)</p>');
+				})();
 			//-->
 		</script>
 
